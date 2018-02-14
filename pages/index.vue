@@ -10,6 +10,7 @@
       </h2>
     </div>
     <nuxt-link :to="{ name : 'douban'}">ddddd</nuxt-link>
+    <nuxt-link :to="{ name : 'test'}">test</nuxt-link>
   </section>
 </template>
 
