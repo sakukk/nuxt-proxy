@@ -41,7 +41,14 @@ module.exports = {
     '@nuxtjs/proxy'
   ],
   plugins: [
-    '~/plugins/axios'
+    '~/plugins/axios',
+    {
+      src: '~/plugins/elementui',
+      ssr: true
+    }
+  ],
+  css: [
+    'element-ui/lib/theme-chalk/index.css'
   ],
   proxy: [
     ['/api', {
@@ -49,5 +56,6 @@ module.exports = {
       changeOrigin: true,
       pathRewrite: { '^/api/': '' }
     }]
-  ]
+  ],
+  vendor: ['element-ui']
 }

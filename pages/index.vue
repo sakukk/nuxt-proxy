@@ -2,15 +2,10 @@
   <section class="container">
     <div>
       <app-logo/>
-      <h1 class="title">
-        nuxtpro
-      </h1>
       <h2 class="subtitle">
         Nuxt.js project
       </h2>
     </div>
-    <nuxt-link :to="{ name : 'douban'}">ddddd</nuxt-link>
-    <nuxt-link :to="{ name : 'test'}">test</nuxt-link>
   </section>
 </template>
 
@@ -19,6 +14,9 @@ import AppLogo from '~/components/AppLogo.vue'
 export default {
   components: {
     AppLogo
+  },
+  mounted () {
+    console.log(this.$router.options.routes)
   }
 }
 </script>
