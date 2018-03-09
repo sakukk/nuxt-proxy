@@ -16,7 +16,13 @@ export default {
     AppLogo
   },
   mounted () {
-    console.log(this.$router.options.routes)
+    this.$cookie.set('test','testcookie111')
+    this.$axios.get('/user').then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log(err)
+    })
+
   }
 }
 </script>

@@ -14,11 +14,14 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
-    "nuxt": "^1.0.0"
+    "element-ui": "^2.2.1",
+    "nuxt": "^1.0.0",
+    "vue-cookie": "^1.1.4"
   },
   "devDependencies": {
     "@nuxtjs/axios": "^5.0.1",
     "@nuxtjs/proxy": "^1.1.4",
+    "axios-mock-adapter": "^1.14.1",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",

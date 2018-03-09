@@ -45,7 +45,9 @@ module.exports = {
     {
       src: '~/plugins/elementui',
       ssr: true
-    }
+    },
+    '~/plugins/vuecookie',
+    '~/plugins/mock',
   ],
   css: [
     'element-ui/lib/theme-chalk/index.css'
@@ -57,5 +59,5 @@ module.exports = {
       pathRewrite: { '^/api/': '' }
     }]
   ],
-  vendor: ['element-ui']
+  vendor: ['element-ui', 'axios']
 }

@@ -11,7 +11,7 @@
 
 <script>
 	export default {
-		name: "nav",
+		name: "navbar",
     data () {
 		  return {
         activeIndex: '0'
