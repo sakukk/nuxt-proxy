@@ -8,3 +8,4 @@ mock.onGet('/user').reply(200,{
     {id: 1, name: '123123'}
   ]
 })
+// pr conflict merge
